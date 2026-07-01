@@ -1,0 +1,41 @@
+# ESP-IDF build output
+build/
+**/build/
+managed_components/
+dependencies.lock
+
+# ESP-IDF generated backup
+sdkconfig.old
+**/sdkconfig.old
+
+# Optional: local sdkconfig
+sdkconfig
+!sdkconfig.defaults
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated card database
+cards.dat
+cards_printer.bin
+index/
+index_printer/
+sdcard/
+generated/
+output/
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
