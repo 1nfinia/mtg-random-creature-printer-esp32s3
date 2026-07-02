@@ -73,6 +73,8 @@
 - 如果打印机 TXD 输出为 5 V，不要直接连接 ESP32-S3 的 RX 引脚。
 - 当前测试使用的串口参数为 `9600 波特率、8 数据位、无校验、1 停止位`。
 
+详细接线说明见 [`docs/wiring_zh-CN.md`](docs/wiring_zh-CN.md)。
+
 ## 仓库目录结构
 
 ```text
@@ -144,7 +146,7 @@ SD 卡根目录
 [4 字节 little-endian 数据长度][GBK + ESC/POS 数据]
 ```
 
-详细说明见 [`docs/sd_card_format.md`](docs/sd_card_format.md)。
+SD卡目录详细说明见 [`docs/sd_card_format_zh-CN.md`](docs/sd_card_format_zh-CN.md)。
 
 ## 软件环境
 
@@ -174,6 +176,8 @@ idf.py set-target esp32s3
 idf.py build
 ```
 
+编译与烧录详细说明见 [`docs/build_and_flash_zh-CN.md`](docs/build_and_flash_zh-CN.md)。
+
 ## 生成卡牌数据
 
 本仓库不直接分发完整的卡牌数据库。
@@ -193,7 +197,7 @@ tools/card_data_builder/card_data_builder.py
 
 生成完成后，按照前文目录结构将文件复制到 SD 卡。
 
-脚本使用方法见 [`tools/card_data_builder/README.md`](tools/card_data_builder/README.md)。
+详细信息及脚本使用方法见 [`tools/card_data_builder/README_zh-CN.md`](tools/card_data_builder/README_zh-CN.md)。
 
 ## 工作流程
 
@@ -217,21 +221,11 @@ OLED 显示 CMC 和可打印卡牌数量
 热敏打印机输出卡牌信息
 ```
 
-## 添加项目图片
+## 效果图片
 
-将实物照片放入 `docs/images/` 后，可以在 README 中使用 Markdown 插入：
+![原型机实物图](docs/images/prototype.jpg)
 
-```markdown
 ![打印效果](docs/images/printed_result.jpg)
-```
-
-需要控制图片宽度时，可以使用 HTML：
-
-```html
-<p align="center">
-  <img src="docs/images/printed_result.jpg" width="600" alt="打印效果">
-</p>
-```
 
 ## 常见问题
 

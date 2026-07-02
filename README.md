@@ -73,6 +73,8 @@ The tested prototype supports:
 - Do not connect a 5 V printer TX output directly to an ESP32-S3 RX pin.
 - The tested UART configuration is `9600 baud, 8 data bits, no parity, 1 stop bit`.
 
+See [`docs/wiring.md`](docs/wiring.md) for details.
+
 ## Repository Layout
 
 ```text
@@ -174,6 +176,8 @@ idf.py set-target esp32s3
 idf.py build
 ```
 
+See [`docs/build_and_flash.md`](docs/build_and_flash.md) for details.
+
 ## Preparing Card Data
 
 This repository does not distribute the complete generated card database.
@@ -193,7 +197,7 @@ to generate:
 
 Then copy the generated files to the SD card using the directory layout shown above.
 
-See [`tools/card_data_builder/README.md`](tools/card_data_builder/README.md) for usage.
+See [`tools/card_data_builder/README.md`](tools/card_data_builder/README.md) for usage ＆ details.
 
 ## How It Works
 
@@ -217,21 +221,11 @@ Send the payload through UART
 Thermal printer prints the card
 ```
 
-## Adding Images
+## Images
 
-After placing photos in `docs/images/`, insert one with Markdown:
+![Prototype physical image](docs/images/prototype.jpg)
 
-```markdown
-![Printed card example](docs/images/printed_result.jpg)
-```
-
-Or control its width with HTML:
-
-```html
-<p align="center">
-  <img src="docs/images/printed_result.jpg" width="600" alt="Printed card example">
-</p>
-```
+![Printed effect](docs/images/printed_result.jpg)
 
 ## Troubleshooting
 
