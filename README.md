@@ -1,7 +1,7 @@
 <h1 align="center">MTG Random Creature Printer for ESP32-S3</h1>
 
 <p align="center">
-A standalone ESP32-S3 device that selects a random Magic: The Gathering creature card by mana value and prints it with a TTL thermal printer.
+A standalone ESP32-S3 device that selects a random Magic: The Gathering creature card by mana value and prints it with a TTL thermal printer for playing Momir-Vig format in paper.
 </p>
 
 <p align="center">
